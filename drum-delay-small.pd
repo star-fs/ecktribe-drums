@@ -11,11 +11,9 @@
 #X obj 18 186 expr (60 / ($f1 * 4)) * 1000;
 #X obj 15 171 / 1;
 #X obj 37 171 t b f;
-#X floatatom 416 253 5 0 0 2 bpm - -;
-#X obj 423 131 tgl 15 0 empty empty Bypass -15 -7 0 8 -262144 -1 -1
-1 1;
-#X obj 22 250 hsl 80 15 0 1 0 0 empty empty feedback -2 -6 0 8 -128992
--225280 -1 3160 1;
+#X floatatom 416 253 5 0 0 2 bpm - - 0;
+#X obj 30 28 tgl 15 0 empty empty Bypass -15 -7 0 8 #fcfcfc #000000 #000000 0 1;
+#X obj 10 50 hsl 80 15 0 1 0 0 empty empty feedback -2 -6 0 8 #7c7c7c #d8fcfc #000000 0 1;
 #X obj 418 222 r bpm;
 #X obj 179 289 outlet~;
 #X obj 194 23 loadbang;
@@ -24,7 +22,7 @@
 #X msg 154 40 3;
 #X obj 177 260 sig-switch;
 #X msg 35 211 0.4;
-#X floatatom 38 132 3 0 16 2 measures - -;
+#X floatatom 5 26 3 0 16 2 measures - - 0;
 #X connect 0 0 1 0;
 #X connect 0 0 21 0;
 #X connect 1 0 2 0;
@@ -53,4 +51,4 @@
 #X connect 21 0 16 0;
 #X connect 22 0 14 0;
 #X connect 23 0 11 0;
-#X coords 0 0 1 1 120 75 1;
+#X coords 0 0 1 1 120 75 1 0 0;

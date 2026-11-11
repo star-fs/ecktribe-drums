@@ -1,100 +1,60 @@
 #N canvas 23 64 738 600 10;
-#X obj -9 8 cnv 60 730 585 dmachine_canvas empty empty 10 12 0 14 -129653
--66577 0;
-#X obj 474 187 bng 30 50 10 0 trigger midi_trigger trigger -6 -6 0
-7 -24198 -1 -1;
-#X obj 431 26 hradio 15 1 0 4 voice_type midi_voice_type si_sq_tr_no
-3 -5 0 7 -225271 -1 -1 3;
-#X obj 430 64 hradio 15 1 0 4 mod_type midi_mod_type si_sq_tr_no 3
--5 0 7 -188351 -1 -1 1;
-#X obj 506 66 hradio 12 1 0 2 mod_source_type midi_mod_source_type
-a/w 1 -6 0 8 -262144 -1 -1 1;
-#X obj 506 27 hradio 12 1 0 2 voice_source_type midi_voice_source_type
-a/w 1 -6 0 8 -262144 -1 -1 1;
-#X obj 589 65 nbx 5 14 -1e+37 1e+37 0 0 mod_freq midi_mod_freq freq
-0 -6 0 8 -262144 -1 -1 8 256;
-#X obj 537 65 nbx 5 14 -1e+37 1e+37 0 0 mod_depth midi_mod_depth depth
-0 -6 0 8 -262144 -1 -1 155 256;
-#X obj 589 25 nbx 5 14 3 1e+37 0 0 len midi_len length 0 -6 0 8 -262144
--1 -1 12 256;
-#X obj 537 25 nbx 5 14 -1e+37 1e+37 0 0 pitch midi_pitch pitch 0 -6
-0 8 -262144 -1 -1 222 256;
-#X obj 146 218 hsl 110 15 0 1 0 0 sdelays midi_sdelays send_ex -2 -4
-1 7 -188408 -1 -33289 0 1;
-#X obj 146 194 hsl 110 15 0 0.5 0 0 sendfx midi_sendfx send_fx -2 -4
-1 7 -188408 -1 -33289 213 1;
-#X obj 306 171 vsl 10 60 0 2 0 0 b2 midi_b2 empty 0 -8 0 8 -166441
--44926 -1 4300 1;
-#X obj 325 171 vsl 10 60 0 2 0 0 b3 midi_b3 empty 0 -8 0 8 -166441
--44926 -1 4600 1;
-#X obj 344 171 vsl 10 60 0 2 0 0 b4 midi_b4 equalizer -25 -8 0 8 -166441
--44926 -1 5900 1;
-#X obj 363 171 vsl 10 60 0 2 0 0 b5 midi_b5 empty 0 -8 0 8 -166441
--44926 -1 5500 1;
-#X obj 382 171 vsl 10 60 0 2 0 0 b6 midi_b6 empty 0 -8 0 8 -166441
--44926 -1 0 1;
-#X obj 485 105 hradio 12 1 0 17 delay_measures midi_delay_measures
-measures 0 -6 0 8 -225271 -1 -1 1;
-#X obj 558 131 hsl 128 15 0 1 0 0 delay_feedback midi_delay_feedback
-feedback -2 -6 0 8 -128992 -225280 -1 2600 1;
-#X obj 490 132 nbx 5 14 0 1e+37 0 0 delay_bpm midi_delay_bpm bpm 0
--6 0 10 -262144 -1 -1 48 256;
-#X obj 465 119 tgl 12 0 delay_on midi_delay_on on 0 -6 0 7 -258699
--1 -1 1 1;
-#X obj 414 65 tgl 12 0 mod_on midi_mod_on on 0 -6 0 7 -258699 -1 -1
-1 1;
-#X obj 641 26 nbx 5 14 -1e+37 1e+37 0 0 vq midi_vq noise_Q 0 -6 0 8
--262144 -1 -1 0 256;
-#X obj 642 65 nbx 5 14 -1e+37 1e+37 0 0 mq midi_mq noise_Q 0 -6 0 8
--262144 -1 -1 11 256;
-#X obj 17 64 bng 25 250 50 0 s_load empty load 0 30 0 8 -42246 -1 -1
-;
-#X obj 51 64 bng 25 250 50 0 s_save empty save 0 30 0 8 -143491 -1
--1;
-#X symbolatom 16 41 14 0 0 2 patch midi_patch_name patch_name;
-#X obj 89 85 bng 15 250 50 0 browse empty browse -7 20 0 7 -99865 -1
--1;
+#X obj -9 8 cnv 60 730 585 dmachine_canvas empty empty 10 12 0 14 #7ca4d0 #404040 0;
+#X obj 474 187 bng 30 50 10 0 trigger midi_trigger trigger -6 -6 0 7 #14e814 #000000 #000000;
+#X obj 431 26 hradio 15 1 0 4 voice_type midi_voice_type si_sq_tr_no 3 -5 0 7 #d8fcd8 #000000 #000000 0;
+#X obj 430 64 hradio 15 1 0 4 mod_type midi_mod_type si_sq_tr_no 3 -5 0 7 #b4f8f8 #000000 #000000 0;
+#X obj 506 66 hradio 12 1 0 2 mod_source_type midi_mod_source_type a/w 1 -6 0 8 #fcfcfc #000000 #000000 0;
+#X obj 506 27 hradio 12 1 0 2 voice_source_type midi_voice_source_type a/w 1 -6 0 8 #fcfcfc #000000 #000000 0;
+#X obj 589 65 nbx 5 14 -1e+37 1e+37 0 0 mod_freq midi_mod_freq freq 0 -6 0 8 #fcfcfc #000000 #000000 0 256;
+#X obj 537 65 nbx 5 14 -1e+37 1e+37 0 0 mod_depth midi_mod_depth depth 0 -6 0 8 #fcfcfc #000000 #000000 0 256;
+#X obj 589 25 nbx 5 14 3 1e+37 0 0 len midi_len length 0 -6 0 8 #fcfcfc #000000 #000000 0 256;
+#X obj 537 25 nbx 5 14 -1e+37 1e+37 0 0 pitch midi_pitch pitch 0 -6 0 8 #fcfcfc #000000 #000000 0 256;
+#X obj 146 218 hsl 110 15 0 1 0 0 sdelays midi_sdelays send_ex -2 -4 1 7 #b4fcdc #000000 #202020 0 1;
+#X obj 146 194 hsl 110 15 0 0.5 0 0 sendfx midi_sendfx send_fx -2 -4 1 7 #b4fcdc #000000 #202020 0 1;
+#X obj 306 171 vsl 10 60 0 2 0 0 b2 midi_b2 empty 0 -8 0 8 #a0a0a0 #28f4f4 #000000 0 1;
+#X obj 325 171 vsl 10 60 0 2 0 0 b3 midi_b3 empty 0 -8 0 8 #a0a0a0 #28f4f4 #000000 0 1;
+#X obj 344 171 vsl 10 60 0 2 0 0 b4 midi_b4 equalizer -25 -8 0 8 #a0a0a0 #28f4f4 #000000 0 1;
+#X obj 363 171 vsl 10 60 0 2 0 0 b5 midi_b5 empty 0 -8 0 8 #a0a0a0 #28f4f4 #000000 0 1;
+#X obj 382 171 vsl 10 60 0 2 0 0 b6 midi_b6 empty 0 -8 0 8 #a0a0a0 #28f4f4 #000000 0 1;
+#X obj 485 105 hradio 12 1 0 17 delay_measures midi_delay_measures measures 0 -6 0 8 #d8fcd8 #000000 #000000 0;
+#X obj 558 131 hsl 128 15 0 1 0 0 delay_feedback midi_delay_feedback feedback -2 -6 0 8 #7c7c7c #d8fcfc #000000 0 1;
+#X obj 490 132 nbx 5 14 0 1e+37 0 0 delay_bpm midi_delay_bpm bpm 0 -6 0 10 #fcfcfc #000000 #000000 0 256;
+#X obj 465 119 tgl 12 0 delay_on midi_delay_on on 0 -6 0 7 #fc2828 #000000 #000000 0 1;
+#X obj 414 65 tgl 12 0 mod_on midi_mod_on on 0 -6 0 7 #fc2828 #000000 #000000 0 1;
+#X obj 641 26 nbx 5 14 -1e+37 1e+37 0 0 vq midi_vq noise_Q 0 -6 0 8 #fcfcfc #000000 #000000 0 256;
+#X obj 642 65 nbx 5 14 -1e+37 1e+37 0 0 mq midi_mq noise_Q 0 -6 0 8 #fcfcfc #000000 #000000 0 256;
+#X obj 17 64 bng 25 250 50 0 s_load empty load 0 30 0 8 #285014 #000000 #000000;
+#X obj 51 64 bng 25 250 50 0 s_save empty save 0 30 0 8 #8c0808 #000000 #000000;
+#X symbolatom 16 41 14 0 0 2 patch midi_patch_name patch_name 0;
+#X obj 89 85 bng 15 250 50 0 browse empty browse -7 20 0 7 #606060 #000000 #000000;
 #X text 3 564 1;
 #X text 188 564 9;
 #X text 369 564 17;
 #X text 550 563 25;
-#X obj 88 59 bng 15 250 50 0 new empty new 1 20 0 7 -195568 -1 -1;
-#X obj 15 114 nbx 3 14 1 5 0 0 empty voicenum empty 0 -6 0 10 -262144
--1 -1 5 256;
-#X obj 15 130 hradio 23 1 0 5 rcvnum vinit voice 45 -8 0 8 -262131
--99865 -1 4;
+#X obj 88 59 bng 15 250 50 0 new empty new 1 20 0 7 #bcbcbc #000000 #000000;
+#X obj 15 114 nbx 3 14 1 5 0 0 empty voicenum empty 0 -6 0 10 #fcfcfc #000000 #000000 0 256;
+#X obj 15 130 hradio 23 1 0 5 rcvnum vinit voice 45 -8 0 8 #fcfcc8 #606060 #000000 0;
 #X obj 175 19 transport;
-#X obj 19 153 tgl 15 0 v1mute midi_v1mute empty 0 -6 0 8 -219817 -1
--1 0 1;
-#X obj 19 218 hsl 110 15 0 1 0 0 pan midi_pan pan -2 -4 1 7 -188408
--1 -33289 7200 1;
-#X obj 19 194 hsl 110 15 0 1 0 0 volume midi_volume volume -2 -4 1
-7 -188408 -1 -33289 7600 1;
-#X obj 42 153 tgl 15 0 v2mute midi_v2mute empty 0 -6 0 8 -219817 -1
--1 0 1;
-#X obj 65 153 tgl 15 0 v3mute midi_v3mute empty 0 -6 0 8 -219817 -1
--1 0 1;
-#X obj 88 153 tgl 15 0 v4mute midi_v4mute empty 0 -6 0 8 -219817 -1
--1 0 1;
-#X obj 111 153 tgl 15 0 v5mute midi_v5mute empty 0 -6 0 8 -219817 -1
--1 0 1;
+#X obj 19 153 tgl 15 0 v1mute midi_v1mute empty 0 -6 0 8 #d4a8a0 #000000 #000000 0 1;
+#X obj 19 218 hsl 110 15 0 1 0 0 pan midi_pan pan -2 -4 1 7 #b4fcdc #000000 #202020 0 1;
+#X obj 19 194 hsl 110 15 0 1 0 0 volume midi_volume volume -2 -4 1 7 #b4fcdc #000000 #202020 0 1;
+#X obj 42 153 tgl 15 0 v2mute midi_v2mute empty 0 -6 0 8 #d4a8a0 #000000 #000000 0 1;
+#X obj 65 153 tgl 15 0 v3mute midi_v3mute empty 0 -6 0 8 #d4a8a0 #000000 #000000 0 1;
+#X obj 88 153 tgl 15 0 v4mute midi_v4mute empty 0 -6 0 8 #d4a8a0 #000000 #000000 0 1;
+#X obj 111 153 tgl 15 0 v5mute midi_v5mute empty 0 -6 0 8 #d4a8a0 #000000 #000000 0 1;
 #X text 42 164 voice mute;
-#X obj 669 258 vsl 20 70 0 1 0 0 gvol gvol vout 0 -7 0 8 -258699 -24198
--1 6900 1;
+#X obj 669 258 vsl 20 70 0 1 0 0 gvol gvol vout 0 -7 0 8 #fc2828 #14e814 #000000 0 1;
 #N canvas 0 0 545 461 wave_record 0;
-#X obj 11 138 bng 15 250 50 0 empty empty file 20 8 0 8 -225280 -1
--1;
-#X obj 15 160 savepanel;
-#X obj 205 391 writesf~ 2;
-#X msg 204 366 open -bytes 3 \$1;
-#X msg 193 343 start;
-#X msg 249 342 stop;
-#X obj 13 294 bng 15 250 50 0 empty empty record 20 8 0 8 -258699 -1
--1;
-#X obj 314 295 bng 15 250 50 0 empty empty stop 20 8 0 8 -195568 -1
--1;
-#X obj 344 367 catch~ rec-R;
-#X obj 75 352 catch~ rec-L;
+#X obj 2 23 bng 15 250 50 0 empty empty file 20 8 0 8 #d8fcfc #000000 #fdfff4;
+#X obj 30 103 savepanel;
+#X obj 160 201 writesf~ 2;
+#X msg 159 176 open -bytes 3 \$1;
+#X msg 148 153 start;
+#X msg 204 152 stop;
+#X obj 93 23 bng 15 250 50 0 empty empty stop -1 -8 0 8 #fc2828 #000000 #ffffff;
+#X obj 57 23 bng 15 250 50 0 empty empty start\ rec -8 -8 0 8 #10bc10 #ffffff #ffffff;
+#X obj 299 177 catch~ rec-R;
+#X obj 30 162 catch~ rec-L;
 #X connect 0 0 1 0;
 #X connect 1 0 3 0;
 #X connect 3 0 2 0;
@@ -104,20 +64,20 @@ feedback -2 -6 0 8 -128992 -225280 -1 2600 1;
 #X connect 7 0 5 0;
 #X connect 8 0 2 1;
 #X connect 9 0 2 0;
-#X coords 0 0 1 1 120 50 1;
+#X coords 0 0 1 1 120 50 1 0 0;
 #X restore 21 253 pd wave_record;
 #N canvas 158 200 561 286 mix 0;
-#X obj 5 99 drum-delay-small;
-#X obj 383 96 drum-delay-small;
-#X obj 11 72 catch~ L;
-#X obj 389 71 catch~ R;
-#X obj 8 183 throw~ finalL;
-#X obj 390 180 throw~ finalR;
+#X obj 8 16 drum-delay-small;
+#X obj 147 16 drum-delay-small;
+#X obj 8 -31 catch~ L;
+#X obj 147 -25 catch~ R;
+#X obj 8 129 throw~ finalL;
+#X obj 147 129 throw~ finalR;
 #X connect 0 0 4 0;
 #X connect 1 0 5 0;
 #X connect 2 0 0 0;
 #X connect 3 0 1 0;
-#X coords 0 0 1 1 195 40 1;
+#X coords 0 0 1 1 288 112 1 0 0;
 #X restore 237 251 pd mix delay L/R;
 #N canvas 328 131 353 134 et_innards 0;
 #N canvas 116 90 339 348 ER-1midi_map 0;
@@ -1857,16 +1817,11 @@ feedback -2 -6 0 8 -128992 -225280 -1 2600 1;
 #X connect 3 0 6 0;
 #X connect 4 0 5 0;
 #X restore 457 74 pd midi_note_receive;
-#X obj 552 111 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
--1;
-#X obj 566 111 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
--1;
-#X obj 536 111 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
--1;
-#X obj 598 111 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
--1;
-#X obj 582 111 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
--1;
+#X obj 552 111 bng 15 250 50 0 empty empty empty 0 -6 0 8 #fcfcfc #000000 #000000;
+#X obj 566 111 bng 15 250 50 0 empty empty empty 0 -6 0 8 #fcfcfc #000000 #000000;
+#X obj 536 111 bng 15 250 50 0 empty empty empty 0 -6 0 8 #fcfcfc #000000 #000000;
+#X obj 598 111 bng 15 250 50 0 empty empty empty 0 -6 0 8 #fcfcfc #000000 #000000;
+#X obj 582 111 bng 15 250 50 0 empty empty empty 0 -6 0 8 #fcfcfc #000000 #000000;
 #X connect 0 0 2 0;
 #X connect 1 0 2 1;
 #X connect 1 1 2 2;
@@ -1989,9 +1944,9 @@ feedback -2 -6 0 8 -128992 -225280 -1 2600 1;
 #X restore 18 101 pd audio_output;
 #N canvas 59 264 590 338 spd-6midi_map 0;
 #X obj 65 -9 notein;
-#X floatatom 110 15 5 0 0 0 - - -;
-#X floatatom 72 15 5 0 0 0 - - -;
-#X floatatom 34 15 5 0 0 0 - - -;
+#X floatatom 110 15 5 0 0 0 - - - 0;
+#X floatatom 72 15 5 0 0 0 - - - 0;
+#X floatatom 34 15 5 0 0 0 - - - 0;
 #X obj 39 210 route 49 50 43 36 38 42;
 #X obj 39 186 pack f f;
 #X obj 30 240 moses 0;
@@ -2018,10 +1973,8 @@ feedback -2 -6 0 8 -128992 -225280 -1 2600 1;
 #X obj 43 40 t b f;
 #X obj 37 130 unpack f f;
 #X text 133 84 wow - fucking notein outlet ordering...;
-#X text 132 97 the spd6 sends a note off in the form of 10/lastnote/0
-;
-#X text 132 110 approximatly 5 seconds after note on. this strips those
-\,;
+#X text 132 97 the spd6 sends a note off in the form of 10/lastnote/0;
+#X text 132 110 approximatly 5 seconds after note on. this strips those \,;
 #X text 134 124 and routes note-on's;
 #X connect 0 0 3 0;
 #X connect 0 1 2 0;
@@ -2061,43 +2014,29 @@ feedback -2 -6 0 8 -128992 -225280 -1 2600 1;
 #X obj 139 61 drum-insturment 3;
 #X obj 139 104 drum-insturment 5;
 #X restore 20 321 pd et_innards;
-#X obj 633 186 tgl 20 0 record_midi midi_record_midi record_midi -20
-25 0 8 -258699 -1 -1 0 1;
+#X obj 633 186 tgl 20 0 record_midi midi_record_midi record_midi -20 25 0 8 #fc2828 #000000 #000000 0 1;
 #N canvas 192 387 557 156 effects_window 0;
-#X obj 3 2 cnv 15 550 150 empty empty empty 20 12 0 20 -195568 -66577
-0;
+#X obj 3 2 cnv 15 550 150 empty empty empty 20 12 0 20 #bcbcbc #404040 0;
 #X text 260 1 pitch shift;
 #X text 121 3 decimator;
 #X text 421 9 Reverb;
-#X obj 279 61 nbx 3 14 1 7 0 0 ps_buf midi_ps_buf buffers 0 -6 0 10
--262144 -1 -1 1 256;
-#X obj 108 30 hsl 90 20 0 44100 0 0 desc_resamp midi_desc_resamp resample
--2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 279 61 nbx 3 14 1 7 0 0 ps_buf midi_ps_buf buffers 0 -6 0 10 #fcfcfc #000000 #000000 0 256;
+#X obj 108 30 hsl 90 20 0 44100 0 0 desc_resamp midi_desc_resamp resample -2 -6 0 8 #fcfcfc #000000 #000000 0 1;
 #X text 105 48 0;
 #X text 173 48 44100;
-#X obj 108 76 hsl 90 20 0 1 0 0 desc_smooth midi_desc_smooth smoothing
--2 -6 0 8 -262144 -1 -1 0 1;
-#X obj 383 28 hsl 120 15 0 1 0 0 rsize midi_rsize room_size 33 7 0
-8 -262144 -1 -1 2975 1;
-#X obj 383 64 hsl 120 15 0 1 0 0 rwmix midi_rwmix wet_mix 33 7 0 8
--262144 -1 -1 5950 1;
-#X obj 383 46 hsl 120 15 0 1 0 0 rdamp midi_rdamp damping 33 7 0 8
--262144 -1 -1 0 1;
-#X obj 383 82 hsl 120 15 0 1 0 0 rdry midi_rdry dry_mix 33 7 0 8 -262144
--1 -1 0 1;
-#X obj 383 100 hsl 120 15 0 1 0 0 rwidth midi_rwidth stereo_width 33
-7 0 8 -262144 -1 -1 11900 1;
-#X obj 21 51 vradio 20 1 0 2 fxroute midi_fxroute routing 0 -6 0 8
--262144 -1 -1 1;
+#X obj 108 76 hsl 90 20 0 1 0 0 desc_smooth midi_desc_smooth smoothing -2 -6 0 8 #fcfcfc #000000 #000000 0 1;
+#X obj 383 28 hsl 120 15 0 1 0 0 rsize midi_rsize room_size 33 7 0 8 #fcfcfc #000000 #000000 0 1;
+#X obj 383 64 hsl 120 15 0 1 0 0 rwmix midi_rwmix wet_mix 33 7 0 8 #fcfcfc #000000 #000000 0 1;
+#X obj 383 46 hsl 120 15 0 1 0 0 rdamp midi_rdamp damping 33 7 0 8 #fcfcfc #000000 #000000 0 1;
+#X obj 383 82 hsl 120 15 0 1 0 0 rdry midi_rdry dry_mix 33 7 0 8 #fcfcfc #000000 #000000 0 1;
+#X obj 383 100 hsl 120 15 0 1 0 0 rwidth midi_rwidth stereo_width 33 7 0 8 #fcfcfc #000000 #000000 0 1;
+#X obj 21 51 vradio 20 1 0 2 fxroute midi_fxroute routing 0 -6 0 8 #fcfcfc #000000 #000000 0;
 #X text 44 52 1->2->3;
 #X text 46 70 | | |;
 #X text 46 80 1 2 3;
-#X obj 205 32 vsl 20 70 0 1 0 0 desc_vol midi_desc_vol vol 0 -8 0 8
--262144 -1 -1 0 1;
-#X obj 329 32 vsl 20 70 0 1 0 0 ps_vol midi_ps_vol vol 0 -8 0 8 -262144
--1 -1 5175 1;
-#X obj 513 28 vsl 20 70 0 1 0 0 reverb_vol midi_reverb_vol vol 0 -8
-0 8 -262144 -1 -1 6900 1;
+#X obj 205 32 vsl 20 70 0 1 0 0 desc_vol midi_desc_vol vol 0 -8 0 8 #fcfcfc #000000 #000000 0 1;
+#X obj 329 32 vsl 20 70 0 1 0 0 ps_vol midi_ps_vol vol 0 -8 0 8 #fcfcfc #000000 #000000 0 1;
+#X obj 513 28 vsl 20 70 0 1 0 0 reverb_vol midi_reverb_vol vol 0 -8 0 8 #fcfcfc #000000 #000000 0 1;
 #N canvas 58 48 573 407 guts 0;
 #X obj 214 24 catch~ sfxl;
 #X obj 234 57 catch~ sfxr;
@@ -2106,16 +2045,16 @@ feedback -2 -6 0 8 -128992 -225280 -1 2600 1;
 #N canvas 379 94 458 347 descimate 0;
 #N canvas 350 286 445 310 decimateMidi 0;
 #X obj 261 215 outlet;
-#X floatatom 44 40 5 0 0 0 - - -;
+#X floatatom 44 40 5 0 0 0 - - - 0;
 #X obj 44 17 ctlin 74;
 #X msg 43 142 control resamp \$1;
-#X floatatom 192 38 5 0 0 0 - - -;
+#X floatatom 192 38 5 0 0 0 - - - 0;
 #X obj 192 15 ctlin 71;
 #X msg 189 140 control smooth \$1;
 #X obj 43 57 * 347.244;
-#X floatatom 43 77 5 0 0 0 - - -;
+#X floatatom 43 77 5 0 0 0 - - - 0;
 #X obj 191 57 / 127;
-#X floatatom 191 79 5 0 0 0 - - -;
+#X floatatom 191 79 5 0 0 0 - - - 0;
 #X obj 63 112 r desc_resamp;
 #X obj 221 112 r desc_smooth;
 #X connect 1 0 7 0;
@@ -2181,11 +2120,11 @@ feedback -2 -6 0 8 -128992 -225280 -1 2600 1;
 #N canvas 306 316 311 237 pitchMidi 0;
 #X obj 9 199 outlet;
 #X obj 9 11 notein;
-#X floatatom 56 62 5 0 0 0 - - -;
+#X floatatom 56 62 5 0 0 0 - - - 0;
 #X msg 9 158 control pitch \$1;
 #X msg 153 160 control buffer \$1;
 #X obj 155 45 loadbang;
-#X floatatom 154 89 5 1 7 0 - - -;
+#X floatatom 154 89 5 1 7 0 - - - 0;
 #X obj 57 34 / 31.75;
 #X msg 153 68 1;
 #X obj 58 11 ctlin 77;
@@ -2268,7 +2207,7 @@ feedback -2 -6 0 8 -128992 -225280 -1 2600 1;
 #X msg 246 104 control wet \$1;
 #X obj 291 81 r rwmix;
 #X msg 30 106 control room \$1;
-#X floatatom 31 84 5 0 0 0 - - -;
+#X floatatom 31 84 5 0 0 0 - - - 0;
 #X obj 30 25 ctlin 76;
 #X obj 29 51 / 127;
 #X connect 1 0 10 0;
@@ -2367,8 +2306,7 @@ feedback -2 -6 0 8 -128992 -225280 -1 2600 1;
 #X msg 25 93 1;
 #X msg 131 94 1;
 #X msg 273 95 0.5;
-#X obj 353 30 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
--1;
+#X obj 353 30 bng 15 250 50 0 empty empty empty 0 -6 0 8 #fcfcfc #000000 #000000;
 #X msg 392 96 0.25;
 #X obj 414 196 s midi_ps_vol;
 #X msg 411 170 0.75;
@@ -2411,70 +2349,37 @@ feedback -2 -6 0 8 -128992 -225280 -1 2600 1;
 #X connect 6 2 3 0;
 #X connect 6 3 3 0;
 #X restore 12 130 pd guts;
-#X obj 254 31 vsl 20 70 0.25 4 0 0 ps_pitch midi_ps_pitch pitch 0 -8
-0 8 -262144 -1 -1 0 1;
+#X obj 254 31 vsl 20 70 0.25 4 0 0 ps_pitch midi_ps_pitch pitch 0 -8 0 8 #fcfcfc #000000 #000000 0 1;
 #X restore 533 285 pd effects_window;
-#X obj 254 368 vradio 15 1 0 13 n12 midi_n12 empty 0 -6 0 8 -262144
--1 -1 1;
-#X obj 277 368 vradio 15 1 0 13 n13 midi_n13 empty 0 -6 0 8 -195568
--1 -1 1;
-#X obj 300 368 vradio 15 1 0 13 n14 midi_n14 empty 0 -6 0 8 -262144
--1 -1 0;
-#X obj 324 368 vradio 15 1 0 13 n15 midi_n15 empty 0 -6 0 8 -195568
--1 -1 1;
-#X obj 346 368 vradio 15 1 0 13 n16 midi_n16 empty 0 -6 0 8 -262144
--1 -1 0;
-#X obj 138 368 vradio 15 1 0 13 n7 midi_n7 empty 0 -6 0 8 -195568 -1
--1 1;
-#X obj 161 368 vradio 15 1 0 13 n8 midi_n8 empty 0 -6 0 8 -262144 -1
--1 0;
-#X obj 185 368 vradio 15 1 0 13 n9 midi_n9 empty 0 -6 0 8 -195568 -1
--1 1;
-#X obj 208 368 vradio 15 1 0 13 n10 midi_n10 empty 0 -6 0 8 -262144
--1 -1 1;
-#X obj 231 368 vradio 15 1 0 13 n11 midi_n11 empty 0 -6 0 8 -195568
--1 -1 0;
-#X obj 116 368 vradio 15 1 0 13 n6 midi_n6 empty 0 -6 0 8 -262144 -1
--1 1;
-#X obj 0 368 vradio 15 1 0 13 n1 midi_n1 empty 0 -6 0 8 -128992 -1
--1 1;
-#X obj 23 368 vradio 15 1 0 13 n2 midi_n2 empty 0 -6 0 8 -262144 -1
--1 0;
-#X obj 47 368 vradio 15 1 0 13 n3 midi_n3 empty 0 -6 0 8 -195568 -1
--1 1;
-#X obj 70 368 vradio 15 1 0 13 n4 midi_n4 empty 0 -6 0 8 -262144 -1
--1 0;
-#X obj 93 368 vradio 15 1 0 13 n5 midi_n5 empty 0 -6 0 8 -195568 -1
--1 1;
-#X obj 616 368 vradio 15 1 0 13 n28 midi_n28 empty 0 -6 0 8 -262144
--1 -1 1;
-#X obj 638 368 vradio 15 1 0 13 n29 midi_n29 empty 0 -6 0 8 -195568
--1 -1 0;
-#X obj 660 368 vradio 15 1 0 13 n30 midi_n30 empty 0 -6 0 8 -262144
--1 -1 1;
-#X obj 681 368 vradio 15 1 0 13 n31 midi_n31 empty 0 -6 0 8 -195568
--1 -1 0;
-#X obj 702 368 vradio 15 1 0 13 n32 midi_n32 empty 0 -6 0 8 -262144
--1 -1 0;
-#X obj 508 368 vradio 15 1 0 13 n23 midi_n23 empty 0 -6 0 8 -195568
--1 -1 1;
-#X obj 550 368 vradio 15 1 0 13 n25 midi_n25 empty 0 -6 0 8 -195568
--1 -1 0;
-#X obj 571 368 vradio 15 1 0 13 n26 midi_n26 empty 0 -6 0 8 -262144
--1 -1 0;
-#X obj 593 368 vradio 15 1 0 13 n27 midi_n27 empty 0 -6 0 8 -195568
--1 -1 0;
-#X obj 487 368 vradio 15 1 0 13 n22 midi_n22 empty 0 -6 0 8 -262144
--1 -1 0;
-#X obj 369 368 vradio 15 1 0 13 n17 midi_n17 empty 0 -6 0 8 -128992
--1 -1 1;
-#X obj 393 368 vradio 15 1 0 13 n18 midi_n18 empty 0 -6 0 8 -262144
--1 -1 1;
-#X obj 417 368 vradio 15 1 0 13 n19 midi_n19 empty 0 -6 0 8 -195568
--1 -1 0;
-#X obj 440 368 vradio 15 1 0 13 n20 midi_n20 empty 0 -6 0 8 -262144
--1 -1 0;
-#X obj 463 368 vradio 15 1 0 13 n21 midi_n21 empty 0 -6 0 8 -195568
--1 -1 1;
-#X obj 529 368 vradio 15 1 0 13 n24 midi_n24 empty 0 -6 0 8 -262144
--1 -1 0;
+#X obj 254 368 vradio 15 1 0 13 n12 midi_n12 empty 0 -6 0 8 #fcfcfc #000000 #000000 0;
+#X obj 277 368 vradio 15 1 0 13 n13 midi_n13 empty 0 -6 0 8 #bcbcbc #000000 #000000 0;
+#X obj 300 368 vradio 15 1 0 13 n14 midi_n14 empty 0 -6 0 8 #fcfcfc #000000 #000000 0;
+#X obj 324 368 vradio 15 1 0 13 n15 midi_n15 empty 0 -6 0 8 #bcbcbc #000000 #000000 0;
+#X obj 346 368 vradio 15 1 0 13 n16 midi_n16 empty 0 -6 0 8 #fcfcfc #000000 #000000 0;
+#X obj 138 368 vradio 15 1 0 13 n7 midi_n7 empty 0 -6 0 8 #bcbcbc #000000 #000000 0;
+#X obj 161 368 vradio 15 1 0 13 n8 midi_n8 empty 0 -6 0 8 #fcfcfc #000000 #000000 0;
+#X obj 185 368 vradio 15 1 0 13 n9 midi_n9 empty 0 -6 0 8 #bcbcbc #000000 #000000 0;
+#X obj 208 368 vradio 15 1 0 13 n10 midi_n10 empty 0 -6 0 8 #fcfcfc #000000 #000000 0;
+#X obj 231 368 vradio 15 1 0 13 n11 midi_n11 empty 0 -6 0 8 #bcbcbc #000000 #000000 0;
+#X obj 116 368 vradio 15 1 0 13 n6 midi_n6 empty 0 -6 0 8 #fcfcfc #000000 #000000 0;
+#X obj 0 368 vradio 15 1 0 13 n1 midi_n1 empty 0 -6 0 8 #7c7c7c #000000 #000000 0;
+#X obj 23 368 vradio 15 1 0 13 n2 midi_n2 empty 0 -6 0 8 #fcfcfc #000000 #000000 0;
+#X obj 47 368 vradio 15 1 0 13 n3 midi_n3 empty 0 -6 0 8 #bcbcbc #000000 #000000 0;
+#X obj 70 368 vradio 15 1 0 13 n4 midi_n4 empty 0 -6 0 8 #fcfcfc #000000 #000000 0;
+#X obj 93 368 vradio 15 1 0 13 n5 midi_n5 empty 0 -6 0 8 #bcbcbc #000000 #000000 0;
+#X obj 616 368 vradio 15 1 0 13 n28 midi_n28 empty 0 -6 0 8 #fcfcfc #000000 #000000 0;
+#X obj 638 368 vradio 15 1 0 13 n29 midi_n29 empty 0 -6 0 8 #bcbcbc #000000 #000000 0;
+#X obj 660 368 vradio 15 1 0 13 n30 midi_n30 empty 0 -6 0 8 #fcfcfc #000000 #000000 0;
+#X obj 681 368 vradio 15 1 0 13 n31 midi_n31 empty 0 -6 0 8 #bcbcbc #000000 #000000 0;
+#X obj 702 368 vradio 15 1 0 13 n32 midi_n32 empty 0 -6 0 8 #fcfcfc #000000 #000000 0;
+#X obj 508 368 vradio 15 1 0 13 n23 midi_n23 empty 0 -6 0 8 #bcbcbc #000000 #000000 0;
+#X obj 550 368 vradio 15 1 0 13 n25 midi_n25 empty 0 -6 0 8 #bcbcbc #000000 #000000 0;
+#X obj 571 368 vradio 15 1 0 13 n26 midi_n26 empty 0 -6 0 8 #fcfcfc #000000 #000000 0;
+#X obj 593 368 vradio 15 1 0 13 n27 midi_n27 empty 0 -6 0 8 #bcbcbc #000000 #000000 0;
+#X obj 487 368 vradio 15 1 0 13 n22 midi_n22 empty 0 -6 0 8 #fcfcfc #000000 #000000 0;
+#X obj 369 368 vradio 15 1 0 13 n17 midi_n17 empty 0 -6 0 8 #7c7c7c #000000 #000000 0;
+#X obj 393 368 vradio 15 1 0 13 n18 midi_n18 empty 0 -6 0 8 #fcfcfc #000000 #000000 0;
+#X obj 417 368 vradio 15 1 0 13 n19 midi_n19 empty 0 -6 0 8 #bcbcbc #000000 #000000 0;
+#X obj 440 368 vradio 15 1 0 13 n20 midi_n20 empty 0 -6 0 8 #fcfcfc #000000 #000000 0;
+#X obj 463 368 vradio 15 1 0 13 n21 midi_n21 empty 0 -6 0 8 #bcbcbc #000000 #000000 0;
+#X obj 529 368 vradio 15 1 0 13 n24 midi_n24 empty 0 -6 0 8 #fcfcfc #000000 #000000 0;
