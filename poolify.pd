@@ -1,0 +1,15 @@
+#N canvas 178 215 323 246 10;
+#X obj 96 46 r \$1;
+#X obj 125 146 outlet;
+#X obj 125 124 pack s f;
+#X obj 124 81 t b f;
+#X obj 92 104 symbol \$1;
+#X obj 137 22 r receivers_new;
+#X obj 139 44 f 0;
+#X connect 0 0 3 0;
+#X connect 2 0 1 0;
+#X connect 3 0 4 0;
+#X connect 3 1 2 1;
+#X connect 4 0 2 0;
+#X connect 5 0 6 0;
+#X connect 6 0 3 0;

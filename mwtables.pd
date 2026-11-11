@@ -1,0 +1,14 @@
+#N canvas 0 0 404 265 10;
+#X obj 17 24 loadbang;
+#X msg 17 47 \; msine sinesum 64 0.95;
+#X obj 89 25 table msine 67;
+#X obj 16 89 loadbang;
+#X obj 74 89 table mtriangle 67;
+#X msg 16 115 \; mtriangle sinesum 64 0.5 0.25 0.19 0.15 0.14 0.125
+0.1;
+#X obj 16 161 loadbang;
+#X msg 16 185 \; msquare sinesum 64 0.99 0 0.25 0 0.1 0 0.075;
+#X obj 75 160 table msquare 67;
+#X connect 0 0 1 0;
+#X connect 3 0 5 0;
+#X connect 6 0 7 0;

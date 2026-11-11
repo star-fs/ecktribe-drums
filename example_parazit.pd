@@ -1,0 +1,5 @@
+#N canvas 391 250 454 304 12;
+#X obj 17 34 parazit;
+#X text 15 6 Turned on from inside for maximum stealth;
+#X obj 17 64 s ecktribe.pd;
+#X connect 0 0 2 0;
